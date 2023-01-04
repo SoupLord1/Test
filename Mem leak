@@ -1,0 +1,22 @@
+<!Doctype html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <div>
+            <button type="button" id="button">Button</button>            
+            <p></p>
+        </div>
+    </body>
+    <script type="text/javascript">
+            document.getElementById("button").onclick = function buttonClicked() {
+                var i = 0;
+                console.log("button clicked")
+                while (i < Math.floor(Math.random() * 100)) {
+                    console.log("Loop " + i)
+                    document.getElementById("button").innerHTML = i;
+                }
+        }
+    </script>
+</html>
